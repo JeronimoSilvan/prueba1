@@ -1,8 +1,8 @@
-const express = require('express');
-const app = express();
-const productRoutes = require('./routes/productRoutes');
-const cartRoutes = require('./routes/cartRoutes');
+import express from 'express';
+import productRoutes from './routes/productRoutes.js';
+import cartRoutes from './routes/cartRoutes.js';
 
+const app = express();
 app.use(express.json());
 
 app.use('/api/products', productRoutes);

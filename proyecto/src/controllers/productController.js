@@ -1,4 +1,4 @@
-const ProductManager = require('../managers/ProductManager');
+import ProductManager from './managers/ProductManager.js';
 const productManager = new ProductManager('./src/data/products.json');
 
 const getProducts = (req, res) => {
@@ -38,7 +38,7 @@ const deleteProduct = (req, res) => {
     }
 };
 
-module.exports = {
+export default {
     getProducts,
     getProductById,
     addProduct,

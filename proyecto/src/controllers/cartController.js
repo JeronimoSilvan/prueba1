@@ -1,4 +1,4 @@
-const CartManager = require('../managers/CartManager');
+import CartManager from '../managers/CartManager';
 const cartManager = new CartManager('./src/data/carts.json');
 
 const createCart = (req, res) => {
@@ -24,7 +24,7 @@ const addProductToCart = (req, res) => {
     }
 };
 
-module.exports = {
+export default {
     createCart,
     getCartById,
     addProductToCart
