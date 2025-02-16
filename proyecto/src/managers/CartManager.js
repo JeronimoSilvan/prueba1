@@ -1,5 +1,4 @@
 import fs from 'fs';
-const path = require('path');
 
 class CartManager {
     constructor(filePath) {
